@@ -278,15 +278,12 @@ footer a:hover {
 	text-transform: uppercase;
   justify-content: center;
   background-color: #5f4339;
-
+overflow: hidden;
 }
 .codrops-top a{
 
-
 	letter-spacing: 2px;
 	color: #caae53;
-
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   padding-right: 2em;
