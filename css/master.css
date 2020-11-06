@@ -4,61 +4,57 @@
   }
 
   to {
-  top:120px;
+    top: 120px;
   }
 }
 
 @keyframes reveal {
   from {
-    opacity : 1;
+    opacity: 1;
     right: -280px;
   }
 
   to {
-  opacity: 1;
-  right: 0px;
+    opacity: 1;
+    right: 0px;
   }
 }
 
 @keyframes reveal2 {
   from {
-    opacity : 1;
+    opacity: 1;
     left: -280px;
   }
 
   to {
-  opacity: 1;
-  left: 0px;
+    opacity: 1;
+    left: 0px;
   }
 }
 
 @keyframes defilement {
   0% {
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
-    transform: translate3d(-100%,0,0);
-}
+    transform: translate3d(-100%, 0, 0);
+  }
 }
 
- .one img {
+.one img {
   position: relative;
   animation-name: reveal;
   animation-duration: 3s;
   animation-iteration-count: 1;
-
 }
 
 .one h3, p, iframe, video {
- position: relative;
- animation-name: reveal2;
- animation-duration: 3s;
- animation-iteration-count: 1;
-
+  position: relative;
+  animation-name: reveal2;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
-
-
 
 h1 {
   position: absolute;
@@ -75,7 +71,6 @@ h1 {
   animation-iteration-count: 1;
   transition: all 1s ease;
 }
-
 
 body {
   background-color: #ffffb3;
@@ -100,24 +95,21 @@ figure img {
 
 .one-content {
   margin-bottom: 2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-
 }
-
-
-
 
 .one {
   flex-basis: 400px;
   padding-top: 0em;
-max-width: 400px;
-align-items: center;
-justify-content: center;
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .one video {
   border: 8px solid #caae53;
@@ -128,7 +120,6 @@ justify-content: center;
   margin-bottom: 2em;
   align-items: center;
   justify-content: center;
-
 }
 
 iframe {
@@ -140,26 +131,49 @@ iframe {
   margin-bottom: 2em;
 }
 
-
-
-
 .one a {
   font-weight: bold;
   color: #5f4339;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-.one a:hover{
+.one a:hover {
   color: #caae53;
 }
 
-@media (min-width : 1130px) {
+#plus {
+  position: absolute;
+  top: -120px;
+  font-size: 4em;
+  font-weight: bold;
+  padding-left: 0em;
+  color: #5f4339;
+  margin-left: 0px;
+  text-decoration: none;
+  border-radius: 100%;
+  background-color: #ffe082;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border: solid 6px #ffffb3;
+  transition: all 1s ease;
+}
 
-  .one-content{
-flex-wrap: nowrap;
-padding : 0;
+#plus:hover {
+  background-color: #ffffb3;
+  box-shadow: 18px 16px 14px -5px rgba(0, 0, 0, 0.72);
+}
+
+@media (min-width : 1200px) {
+  .one-content {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  #plus{
+  top : 500px;
   }
 }
+
 
 
 h1 {
@@ -178,10 +192,9 @@ h1 {
   transition: all 1s ease;
 }
 
-h1:hover{
+h1:hover {
   opacity: 0;
 }
-
 
 h2 {
   text-align: center;
@@ -196,8 +209,8 @@ h3 {
 }
 
 nav {
-position: absolute;
-width: 100%;
+  position: absolute;
+  width: 100%;
   border-bottom: solid 10px #caae53;
   padding: 1.25em;
   padding-left: 0;
@@ -231,6 +244,12 @@ header a:hover {
   box-shadow: 18px 16px 14px -5px rgba(0, 0, 0, 0.72);
 }
 
+.exergue {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
 footer {
   background-color: #5f4339;
   min-height: 150px;
@@ -244,7 +263,7 @@ footer ul {
   text-align: center;
 }
 
-footer li{
+footer li {
   margin-top: 1em;
   margin-bottom: 2em;
 }
@@ -266,24 +285,21 @@ footer a:hover {
   box-shadow: 18px 16px 14px -5px rgba(0, 0, 0, 0.72);
 }
 
-
 /* barre crédits footer */
-
-
-.codrops-top{
-	font-family:'Arial Narrow', Arial, sans-serif;
-	font-size: 10px;
-	width: 100%;
+.codrops-top {
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 10px;
+  width: 100%;
   color: darkgrey;
-	text-transform: uppercase;
+  text-transform: uppercase;
   justify-content: center;
   background-color: #5f4339;
-overflow: hidden;
+  overflow: hidden;
 }
-.codrops-top a{
 
-	letter-spacing: 2px;
-	color: #caae53;
+.codrops-top a {
+  letter-spacing: 2px;
+  color: #caae53;
   text-decoration: none;
   display: inline-block;
   padding-right: 2em;
@@ -294,6 +310,7 @@ overflow: hidden;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-.codrops-top a:hover{
-	color: #ffffb3;
+
+.codrops-top a:hover {
+  color: #ffffb3;
 }
